@@ -54,6 +54,6 @@ jobs:
       - name: Add Artifacts to Release
         uses: softprops/action-gh-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
         with:
           files: build/distributions/*.zip
